@@ -12,19 +12,41 @@
     <title> Change Money</title>
 </head>
 <body>
-    <form>
-        <h2>Amount</h2>
-        <input id="idamount" type="number"/>
-        <h2>From Currency</h2>
-        <select id="idloaitien" name="From Currency">
-            <option id="idVND" value="VND">VND</option>
-        </select>
-        <select id="idloaitien" name="To Currency">
-            <option id="idUSD" value="USD">USD</option>
-        </select>
-        <button onclick="exchange()" type="button">Exchange</button>
-        <script src="exchange.js"></script>
-        <h3 id="idResult"></h3>
-    </form>
+<form>
+    <table>
+        <tr>
+            <td><h2 style="text-align: center">Amount</h2></td>
+            <td width="50px"></td>
+            <td><h2 style="text-align: center">From Currency</h2></td>
+            <td width="50px"></td>
+            <td><h2 style="text-align: center">To Currency</h2></td>
+        </tr>
+        <tr>
+            <td><input id="idamount" type="number"/></td>
+            <td></td>
+            <td style="text-align: center">
+                <select style="width: 160px " id="id1" name="From Currency">
+                    <option value="23000">VND</option>
+                    <option value="1">USD</option>
+                    <option value="115">YEN</option>
+                </select>
+            </td>
+            <td></td>
+            <td style="text-align: center">
+                <select style="width: 160px" id="id2" name="To Currency">
+                    <option value="23000">VND</option>
+                    <option value="1">USD</option>
+                    <option value="115">YEN</option>
+                </select>
+            </td>
+            <td width="50px"></td>
+            <td style="color: aquamarine">
+                <button onclick="exchange()" type="button">Exchange</button>
+            </td>
+        </tr>
+    </table>
+    <script src="exchange.js"></script>
+    <h3 id="idResult"></h3>
+</form>
 </body>
 </html>
